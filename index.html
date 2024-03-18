@@ -19,8 +19,7 @@
 </head>
 <body>
   <!-- Include AR.js scripts and configurations -->
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
   <!-- AR.js video scene -->
   <a-scene embedded arjs="sourceType: webcam;">
@@ -33,8 +32,8 @@
       smoothThreshold="5"
     >
       <!-- HTML5 video element for video playback -->
-      <video id="video" autoplay loop crossorigin="anonymous" playsinline>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+      <video id="video" autoplay="autoplay" loop crossorigin="anonymous" playsinline>
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
         <source src="path-to-your-video.mpeg" type="video/mpeg">
         Your browser does not support the video tag.
       </video>
@@ -50,5 +49,8 @@
       video.play();
     });
   </script>
+
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
